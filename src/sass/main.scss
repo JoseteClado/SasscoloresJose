@@ -30,3 +30,73 @@
 // THEMEs
 @import 'themes/dark';
 @import 'themes/light';
+
+.formas{
+    height: 620px;
+    width: 250px;
+    background-color: black;
+    border-radius: 140px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.forma1{
+    background-color: map-get($colores , color1);
+}
+.forma2{
+    background-color: map-get($colores , color2);
+}
+.forma3{
+    background-color: map-get($colores , color3);
+}
+.forma4{
+    background-color: map-get($colores , color4);
+}
+.forma5{
+    background-color: map-get($colores , color5);
+}
+
+.primeraFila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.segundaFila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.circulo{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.circulo1{
+    background: linear-gradient(to bottom right , map-get($colores, color1),map-get($colores, color2) );
+}
+.circulo2{
+    background: linear-gradient(to bottom right , map-get($colores, color2),map-get($colores, color3) );
+}
+.circulo3{
+    background: linear-gradient(to bottom right , map-get($colores, color4),map-get($colores, color3) );
+}
+.circulo4{
+    background: linear-gradient(to bottom right , map-get($colores, color4),map-get($colores, color2) );
+}
+.circulo5{
+    background: linear-gradient(to bottom right , map-get($colores, color5),map-get($colores, color3) );
+}
+
+.terceraFila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+h2{
+    color: gray;
+}
